@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>The Movie Theater</h1>
+        <h2>Movies and Showtimes</h1>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="container" id="body-fade">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/dark-knight.jpg" alt="The Dark Knight Poster" />
+              <div class="caption">
+                <h4>The Dark Knight</h4>
+                <p>With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dark-knight">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/toy-story.jpg" alt="Toy Story Photo" />
+              <div class="caption">
+                <h4>Toy Story</h4>
+                <p>Woody (Tom Hanks), a good-hearted cowboy doll who belongs to a young boy named Andy (John Morris), sees his position as Andy's favorite toy jeopardized when his parents buy him a Buzz Lightyear (Tim Allen) action figure. Even worse, the arrogant Buzz thinks he's a real spaceman on a mission to return to his home planet. When Andy's family moves to a new house, Woody and Buzz must escape the clutches of maladjusted neighbor Sid Phillips (Erik von Detten) and reunite with their boy.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#toy-story">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="img/pulp-fiction.jpg" alt="Samuel L. Jackson and John Travolta pointing guns offscreen" />
+              <div class="caption">
+                <h4>Pulp Fiction</h4>
+                <p>Vincent Vega (John Travolta) and Jules Winnfield (Samuel L. Jackson) are hitmen with a penchant for philosophical discussions. In this ultra-hip, multi-strand crime movie, their storyline is interwoven with those of their boss, gangster Marsellus Wallace (Ving Rhames) ; his actress wife, Mia (Uma Thurman) ; struggling boxer Butch Coolidge (Bruce Willis) ; master fixer Winston Wolfe (Harvey Keitel) and a nervous pair of armed robbers, "Pumpkin" (Tim Roth) and "Honey Bunny" (Amanda Plummer).</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pulp-fiction">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- MODAL FOR MOVIE 1 -->
+    <div class="modal fade" id="dark-knight" tabindex="-1" role="dialog" aria-labelledby="dark-knight-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="dark-knight-title">The Dark Knight Showtimes</h3>
+      </div>
+      <div class="modal-body">
+        <form id="dark-knight-tickets">
+          <div class="form-group">
+            <h4>Select a showtime:</h4>
+            <select id="dark-knight-showtime">
+              <option>2:30 AM</option>
+              <option>4:20 PM</option>
+              <option>5:45 PM</option>
+              <option>11:00 PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h4>Select age group:</h4>
+            <select id="dark-knight-age">
+              <option>Youth</option>
+              <option>Adult</option>
+              <option>Senior</option>
+            </select>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" >Purchase</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL FOR MOVIE 2 -->
+    <div class="modal fade" id="toy-story" tabindex="-1" role="dialog" aria-labelledby="toy-story-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="toy-story-title">Toy Story Showtimes</h3>
+      </div>
+      <div class="modal-body">
+        <form id="toy-story-tickets">
+          <div class="form-group">
+            <h4>Select a showtime:</h4>
+            <select id="toy-story-showtime">
+              <option>2:10 PM</option>
+              <option>4:35 PM</option>
+              <option>6:45 PM</option>
+              <option>10:30 PM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h4>Select age group:</h4>
+            <select id="toy-story-age">
+              <option>Youth</option>
+              <option>Adult</option>
+              <option>Senior</option>
+            </select>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Purchase</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL FOR MOVIE 3 -->
+    <div class="modal fade" id="pulp-fiction" tabindex="-1" role="dialog" aria-labelledby="pulp-fiction-title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="pulp-fiction-title">Pulp Fiction Showtimes</h3>
+      </div>
+      <div class="modal-body">
+        <form id="pulp-fiction-tickets">
+          <div class="form-group">
+            <h4>Select a showtime:</h4>
+            <select id="pulp-fiction-showtime">
+              <option>8:00 PM</option>
+              <option>8:45 PM</option>
+              <option>10:15 PM</option>
+              <option>12:00 AM</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h4>Select age group:</h4>
+            <select id="pulp-fiction-age">
+              <option>Youth</option>
+              <option>Adult</option>
+              <option>Senior</option>
+            </select>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Purchase</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+<div class="order">
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Thank you for your order!</h2>
+      <img src="img/the-joker.jpg" id="image-one" />
+      <img src="img/tim-allen.jpg" id="image-two" />
+      <img src="img/thumbs-up.jpg" id="image-three" />
+      <h4>Your <span class="movie"></span> <span class="age"></span> ticket for <span class="time"></span> has been succesfully purchased! Enjoy your movie!</h4>
+    </div>
+  </div>
+</div>
+
+<div class="not-old-enough">
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Order Unsuccessful</h2>
+      <img src="img/jackson.jpg">
+      <h4>You are not old enough to see this movie</h4>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

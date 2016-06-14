@@ -1,0 +1,17 @@
+body {
+  background-color: #eee;
+}
+
+.jumbotron {
+  background-color: #FFFFFF;
+  color: #333;
+  border: 2px;
+  border-color: black;
+}
+
+img {
+  padding-top: 13px;
+}
+.order, #image-one, #image-two, #image-three, #not-old-enough {
+  display: none;
+}
