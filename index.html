@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
@@ -82,6 +84,10 @@
               <option>Senior</option>
             </select>
           </div>
+          <div class="form-group">
+            <h4>Enter number of tickets:</h4>
+            <input type="text" id="dark-knight-number">
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -118,6 +124,10 @@
               <option>Adult</option>
               <option>Senior</option>
             </select>
+          </div>
+          <div class="form-group">
+            <h4>Enter number of tickets:</h4>
+            <input type="text" id="toy-story-number">
           </div>
       </div>
       <div class="modal-footer">
@@ -156,6 +166,10 @@
               <option>Senior</option>
             </select>
           </div>
+          <div class="form-group">
+            <h4>Enter number of tickets:</h4>
+            <input type="text" id="pulp-fiction-number">
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -172,12 +186,12 @@
       <img src="img/the-joker.jpg" id="image-one" />
       <img src="img/tim-allen.jpg" id="image-two" />
       <img src="img/thumbs-up.jpg" id="image-three" />
-      <h4>Your <span class="movie"></span> <span class="age"></span> ticket for <span class="time"></span> has been succesfully purchased! Enjoy your movie!</h4>
+      <h4><span class="order-msg"></span></h4>
     </div>
   </div>
 </div>
 
-<div class="not-old-enough">
+<div id="not-old-enough">
   <div class="container">
     <div class="jumbotron">
       <h2>Order Unsuccessful</h2>
